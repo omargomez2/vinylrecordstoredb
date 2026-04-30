@@ -103,6 +103,7 @@ CREATE TABLE order_items (
 CREATE TABLE inventory (
     inventory_id INTEGER PRIMARY KEY,
     album_id INTEGER,
+    stock_quantity INTEGER,
     warehouse_location TEXT,
     last_restock_date TEXT,
     supplier_name TEXT,
@@ -206,15 +207,15 @@ INSERT INTO order_items VALUES
 -- =====================================================
 
 INSERT INTO inventory VALUES
-(1, 1, 'Warehouse A', '2025-01-02', 'Global Vinyl Supply'),
-(2, 2, 'Warehouse A', '2025-01-15', 'Global Vinyl Supply'),
-(3, 3, 'Warehouse B', '2025-01-10', 'Digital Media Co'),
-(4, 4, 'Warehouse B', '2025-02-01', 'European Pressing Ltd'),
-(5, 5, 'Cloud Storage', '2025-02-01', 'Digital Media Co'),
-(6, 6, 'Warehouse C', '2025-02-20', 'Retro Sound Distributors'),
-(7, 7, 'Warehouse A', '2025-03-01', 'Global Vinyl Supply'),
-(8, 8, 'Warehouse B', '2025-03-03', 'Digital Media Co'),
-(9, 9, 'Warehouse C', '2025-03-10', 'Cassette World'),
-(10, 10, 'Warehouse A', '2025-03-15', 'Techno Press Ltd'),
-(11, 11, 'Cloud Storage', '2025-03-18', 'Digital Media Co'),
-(12, 12, 'Warehouse C', '2025-03-20', 'Retro Sound Distributors');
+(1, 1, 12, 'Warehouse A', '2025-01-02', 'Global Vinyl Supply'),
+(2, 2, 8, 'Warehouse A', '2025-01-15', 'Global Vinyl Supply'),
+(3, 3, 7, 'Warehouse B', '2025-01-10', 'Digital Media Co'),
+(4, 4, 9, 'Warehouse B', '2025-02-01', 'European Pressing Ltd'),
+(5, 5, 6,'Cloud Storage', '2025-02-01', 'Digital Media Co'),
+(6, 6, 12, 'Warehouse C', '2025-02-20', 'Retro Sound Distributors'),
+(7, 7, 14, 'Warehouse A', '2025-03-01', 'Global Vinyl Supply'),
+(8, 8, 13, 'Warehouse B', '2025-03-03', 'Digital Media Co'),
+(9, 9, 4, 'Warehouse C', '2025-03-10', 'Cassette World'),
+(10, 10, 9, 'Warehouse A', '2025-03-15', 'Techno Press Ltd'),
+(11, 11, 11, 'Cloud Storage', '2025-03-18', 'Digital Media Co'),
+(12, 12, 7, 'Warehouse C', '2025-03-20', 'Retro Sound Distributors');
