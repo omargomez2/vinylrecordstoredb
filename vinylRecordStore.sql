@@ -128,9 +128,9 @@ INSERT INTO artists VALUES
 -- =====================================================
 
 INSERT INTO albums VALUES
-(1, 1, 'Le Tour de Trance', 2024, 'Vinyl', 29.99, 45),
-(2, 1, 'Trance Andina Vol. 8', 2025, 'Vinyl', 34.99, 30),
-(3, 1, 'Euphoric Horizons', 2023, 'CD', 14.99, 80),
+(1, 1, 'Le Tour de Trance', 2023, 'Vinyl', 29.99, 45),
+(2, 1, 'Good Day', 2025, 'Vinyl', 34.99, 30),
+(3, 1, 'Echoes of Hope', 2026, 'CD', 14.99, 80),
 (4, 2, 'Echoes Beyond Time', 2022, 'Vinyl', 27.99, 25),
 (5, 2, 'Night Drive Frequencies', 2021, 'Digital', 9.99, 999),
 (6, 3, 'City Lights Sessions', 2020, 'Vinyl', 24.99, 18),
