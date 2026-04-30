@@ -64,6 +64,7 @@ CREATE TABLE employees (
     employee_id INTEGER PRIMARY KEY,
     first_name TEXT,
     last_name TEXT,
+    email TEXT,
     role TEXT,
     hire_date TEXT,
     salary REAL
@@ -162,10 +163,10 @@ INSERT INTO customers VALUES
 -- =====================================================
 
 INSERT INTO employees VALUES
-(1, 'Michael', 'Davis', 'Store Manager', '2021-03-10', 4200),
-(2, 'Sarah', 'Wilson', 'Sales Associate', '2022-07-14', 2800),
-(3, 'Kevin', 'Miller', 'Inventory Specialist', '2023-01-21', 3100),
-(4, 'Laura', 'Perez', 'Marketing Coordinator', '2022-09-01', 3600);
+(1, 'Michael', 'Davis', 'michael.davis@ogrecords.com', 'Store Manager', '2021-03-10', 4200),
+(2, 'Sarah', 'Wilson', 'sarah.wilson@ogrecords.com', 'Sales Associate', '2022-07-14', 2800),
+(3, 'Kevin', 'Miller', 'kevin.miller@ogrecords.com', 'Inventory Specialist', '2023-01-21', 3100),
+(4, 'Laura', 'Perez', 'laura.perez@ogrecords.com', 'Marketing Coordinator', '2022-09-01', 3600);
 
 -- =====================================================
 -- INSERT ORDERS
