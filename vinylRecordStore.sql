@@ -49,6 +49,7 @@ CREATE TABLE albums (
     album_id INTEGER PRIMARY KEY,
     artist_id INTEGER,
     album_title TEXT,
+    genre TEXT,
     release_year INTEGER,
     format TEXT,
     price REAL,
@@ -129,18 +130,18 @@ INSERT INTO artists VALUES
 -- =====================================================
 
 INSERT INTO albums VALUES
-(1, 1, 'Le Tour de Trance', 2023, 'Vinyl', 29.99, 45),
-(2, 1, 'Good Day', 2025, 'Vinyl', 34.99, 30),
-(3, 1, 'Echoes of Hope', 2026, 'CD', 14.99, 80),
-(4, 2, 'Echoes Beyond Time', 2022, 'Vinyl', 27.99, 25),
-(5, 2, 'Night Drive Frequencies', 2021, 'Digital', 9.99, 999),
-(6, 3, 'City Lights Sessions', 2020, 'Vinyl', 24.99, 18),
-(7, 4, 'Skyline Dreams', 2024, 'Vinyl', 31.99, 40),
-(8, 4, 'Oceanic State', 2023, 'CD', 15.99, 55),
-(9, 5, 'Retro Midnight', 2021, 'Cassette', 19.99, 22),
-(10, 6, 'Machine Rhythm', 2022, 'Vinyl', 28.99, 35),
-(11, 7, 'Future Neon', 2025, 'Digital', 11.99, 999),
-(12, 3, 'Sunset Grooves', 2021, 'Vinyl', 26.99, 12);
+(1, 1, 'Le Tour de Trance', 'Uplifting Trance', 2023, 'Vinyl', 29.99, 45),
+(2, 1, 'Good Day', 'Uplifting Trance', 2025, 'Vinyl', 34.99, 30),
+(3, 1, 'Echoes of Hope', 'Uplifting Trance', 2026, 'CD', 14.99, 80),
+(4, 2, 'Echoes Beyond Time', 'Progressive Trance', 2022, 'Vinyl', 27.99, 25),
+(5, 2, 'Night Drive Frequencies', 'Progressive Trance', 2021, 'Digital', 9.99, 999),
+(6, 3, 'City Lights Sessions', 'House', 2020, 'Vinyl', 24.99, 18),
+(7, 4, 'Skyline Dreams', 'Trance', 2024, 'Vinyl', 31.99, 40),
+(8, 4, 'Oceanic State', 'Trance', 2023, 'CD', 15.99, 55),
+(9, 5, 'Retro Midnight', 'Synthwave', 2021, 'Cassette', 19.99, 22),
+(10, 6, 'Machine Rhythm', 'Techno', 2022, 'Vinyl', 28.99, 35),
+(11, 7, 'Future Neon', 'Electronic', 2025, 'Digital', 11.99, 999),
+(12, 3, 'Sunset Grooves', 'House', 2021, 'Vinyl', 26.99, 12);
 
 -- =====================================================
 -- INSERT CUSTOMERS
